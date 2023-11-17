@@ -1,5 +1,5 @@
 import "./login.scss";
-import fotoLogin from "../../../public/FotoLogin.svg";
+import fotoLogin from "../../../public/fotoLogin.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,19 +14,24 @@ export default function Login() {
             <input type="password" placeholder="Digite sua senha..." />
           </div>
           <Link href="/conteudoHome">
-          <button>Entrar</button>
+            <button>Entrar</button>
           </Link>
           <div className="linha"></div>
           <p>
             Ainda não tem uma conta?
-            <Link href="/cadastrar"> 
-            <span className="cor-cadastro"> cadastre-se :)</span>
+            <Link href="/cadastrar">
+              <span className="cor-cadastro"> cadastre-se :)</span>
             </Link>
           </p>
         </div>
       </div>
       <div className="fundo-login">
-        <Image src={fotoLogin} width={700} quality={100} />
+        <Image
+          src={fotoLogin}
+          width={700}
+          quality={100}
+          alt="Foto página login"
+        />
       </div>
     </main>
   );

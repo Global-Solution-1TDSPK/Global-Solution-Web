@@ -15,7 +15,7 @@ export default function Cadastrar() {
             <input type="password" placeholder="Digite uma senha..." />
           </div>
           <Link href="/login">
-          <button>Cadastrar</button>
+            <button>Cadastrar</button>
           </Link>
           <p>
             Já é cadastrado? se sim clique em fazer
@@ -26,7 +26,12 @@ export default function Cadastrar() {
         </div>
       </div>
       <div className="fundo-cadastro">
-        <Image src={fotoCadastro} width={700} quality={100} />
+        <Image
+          src={fotoCadastro}
+          width={700}
+          quality={100}
+          alt="Foto página de cadastro"
+        />
       </div>
     </main>
   );
