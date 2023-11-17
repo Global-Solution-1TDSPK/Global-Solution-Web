@@ -13,7 +13,9 @@ export default function Login() {
             <input type="text" placeholder="Digite seu usuário..." />
             <input type="password" placeholder="Digite sua senha..." />
           </div>
+          <Link href="/conteudoHome">
           <button>Entrar</button>
+          </Link>
           <div className="linha"></div>
           <p>
             Ainda não tem uma conta?

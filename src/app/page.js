@@ -1,9 +1,10 @@
-
+import "../app/conteudoHome/page"
+import ConteudoHome from "../app/conteudoHome/page"
 
 export default function Home() {
   return (
     <main>
-      <h1>home</h1>
+      <ConteudoHome/>
     </main>
     
   )

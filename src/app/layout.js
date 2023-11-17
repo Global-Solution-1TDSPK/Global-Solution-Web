@@ -1,6 +1,8 @@
 
 import "../styles/reset.scss";
 import "../styles/geral.scss";
+import Footer from "../Components/Footer";
+import Nav from "../Components/Nav";
 
 
 
@@ -12,7 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body>{children}</body>
+      <body>
+        <Nav/>
+        {children}
+        <Footer/>
+        </body>
     </html>
   );
 }

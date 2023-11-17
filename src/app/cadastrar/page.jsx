@@ -14,7 +14,9 @@ export default function Cadastrar() {
             <input type="text" placeholder="Digite um usuário..." />
             <input type="password" placeholder="Digite uma senha..." />
           </div>
+          <Link href="/login">
           <button>Cadastrar</button>
+          </Link>
           <p>
             Já é cadastrado? se sim clique em fazer
             <Link href="/login">

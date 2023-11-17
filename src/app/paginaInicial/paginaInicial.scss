@@ -1,0 +1,20 @@
+.container {
+  width: 100vw;
+  height: 800px;
+  background-color: #2c2a2a;
+  position: relative;
+}
+
+.roseta-centro {
+  text-align: center;
+  padding-top: 70px;
+
+  & h1 {
+    color: #f0f8ff;
+  }
+
+  & button {
+    height: 100px;
+  }
+
+}
