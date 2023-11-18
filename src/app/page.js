@@ -1,10 +1,10 @@
 import "../app/conteudoHome/page"
-import ConteudoHome from "../app/conteudoHome/page"
+import Principal from "../app/principal/page"
 
 export default function Home() {
   return (
     <main>
-      <ConteudoHome/>
+      <Principal/>
     </main>
     
   )
