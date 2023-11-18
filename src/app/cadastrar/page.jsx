@@ -13,14 +13,19 @@ export default function Cadastrar() {
             <input type="text" placeholder="Digite seu nome..." />
             <input type="text" placeholder="Digite um usuário..." />
             <input type="password" placeholder="Digite uma senha..." />
+            <select name="tipo de usuario">
+              <option value="paciente">Paciente</option>
+              <option value="Adm">Administrador</option>
+            </select>
           </div>
           <Link href="/login">
             <button>Cadastrar</button>
           </Link>
+          <div className="linha"></div>
           <p>
-            Já é cadastrado? se sim clique em fazer
+            Já tem uma conta? Faça
             <Link href="/login">
-              <span className="cor-login"> login</span>
+              <span className="cor-login"> login :)</span>
             </Link>
           </p>
         </div>
