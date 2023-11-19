@@ -12,3 +12,7 @@ h1, h2, h3, h4, h5, h6{
 p, input, button, select{
     font-family: 'Montserrat', serif;
 }
+main{
+  position: relative;
+  min-height: 70vh;
+}
