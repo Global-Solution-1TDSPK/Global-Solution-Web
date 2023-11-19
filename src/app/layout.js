@@ -1,10 +1,5 @@
-
 import "../styles/reset.scss";
 import "../styles/geral.scss";
-import Footer from "../Components/Footer";
-import Nav from "../Components/Nav";
-
-
 
 export const metadata = {
   title: "Global Solution 2023",
@@ -14,11 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body>
-        <Nav/>
-        {children}
-        <Footer/>
-        </body>
+      <body>{children}</body>
     </html>
   );
 }
