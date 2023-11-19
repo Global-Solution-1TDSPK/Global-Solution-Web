@@ -9,7 +9,7 @@ export default function Nav() {
       <div className="logo-centro">
         <div className="centro-img-navbar">
           <Link href="/principal">
-            <Image src={roseta} width={100} quality={100} />
+            <Image src={roseta} width={80} quality={100} />
           </Link>
         </div>
         <Link href="/login">
