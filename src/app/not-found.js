@@ -3,7 +3,7 @@ import Nav from "@/Components/Nav";
 import Footer from "@/Components/Footer";
 import Image from "next/image";
 import erro from "../../public/not-found.png";
-import "../styles/geral.scss";
+import "../styles/not-found.scss";
 
 export default function Custom404() {
   return (

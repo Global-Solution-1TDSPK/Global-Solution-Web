@@ -1,0 +1,37 @@
+.fundo-not-found {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  & img {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  & h1 {
+    color: #2c2a2a;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 0px 10px 15px #234d3c;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .fundo-not-found {
+    & h1 {
+      text-align: center;
+      font-size: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 370px){
+    .fundo-not-found {
+        & h1 {
+          text-align: center;
+          font-size: 35px;
+        }
+      }
+}

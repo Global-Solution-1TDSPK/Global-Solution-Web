@@ -2,8 +2,6 @@
   width: 100vw;
   height: 12vh;
   background-color: #2c2a2a;
-
-  
 }
 
 .logo-centro {
@@ -11,25 +9,17 @@
   justify-content: space-between;
   height: 12vh;
 
-  & p {
-    color: #f0f8ff;
-    margin-right: 20px !important;
-    margin: auto;
-    font-size: 18px;
-  }
-
-  & span {
+  & p, a {
     color: #ec6e0c;
     font-weight: 600;
     cursor: pointer;
+    font-size: 18px;
+    margin: 20px;
   }
 
-  & span:hover{
-    text-decoration: underline;
+  .centro-img-navbar {
+    margin: auto 0 auto 0;
   }
 }
 
-.centro-img-navbar{
-  margin: auto;
-  width: 85%;
-}
+
