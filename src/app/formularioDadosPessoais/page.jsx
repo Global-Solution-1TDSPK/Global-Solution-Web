@@ -28,7 +28,10 @@ export default function FormularioDadosPessoais() {
                     <option value="feminino">Feminino</option>
                     <option value="masculino">Masculino</option>
                   </select>
-                  <input type="date" />
+                  <input 
+                  type="date" 
+                  title="Digite sua data de nascimento..."
+                  />
                 </div>
                 <div className="edicao-form">
                   <input
