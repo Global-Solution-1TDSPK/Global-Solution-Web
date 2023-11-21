@@ -14,10 +14,6 @@ export default function Cadastrar() {
             <input type="text" placeholder="Digite seu sobrenome..." />
             <input type="email" placeholder="Digite seu e-mail..." />
             <input type="password" placeholder="Digite uma senha..." />
-            <select name="tipo de usuario">
-              <option value="paciente">Paciente</option>
-              <option value="Adm">Administrador</option>
-            </select>
           </div>
           <Link href="/login">
             <button>Cadastrar</button>
