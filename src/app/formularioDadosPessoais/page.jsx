@@ -59,9 +59,12 @@ export default function FormularioDadosPessoais() {
                     id="telefone"
                   />
                 </div>
-                <Link href="/conteudoHome">
+                <div className="ajuste-botao">
                   <button type="submit">Atualizar</button>
-                </Link>
+                  <Link href="/conteudoHome">
+                    <button type="submit">Voltar</button>
+                  </Link>
+                </div>
               </form>
             </div>
           </div>

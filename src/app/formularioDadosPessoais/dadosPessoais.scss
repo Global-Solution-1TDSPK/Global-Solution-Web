@@ -81,12 +81,14 @@
   flex-direction: column;
   align-items: center;
   margin-top: 90px;
+}
+
+.ajuste-botao {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
   & button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
     height: 50px;
     width: 200px;
     background-color: #ec6e0c;
@@ -94,7 +96,6 @@
     border-radius: 5px;
     font-size: 17px;
     margin-top: 15px;
-    
   }
 }
 
