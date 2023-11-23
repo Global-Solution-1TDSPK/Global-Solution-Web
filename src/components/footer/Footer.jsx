@@ -30,6 +30,13 @@ export default function Footer() {
         </a>
       </div>
       <p>© 2023 EZHealth. Todos os direitos reservados.</p>
+      <div className="integrantes">
+        <p>99055 - Douglas Danilo Rocha de Sousa - Todo o resto do projeto</p>
+        <p>97706 - Marcelo Fortes Junior - formulários </p>
+        <p>98469 - Pedro Duarte Farias - components</p>
+       <p>551322 - Gabriel Caverzan - Rotas </p>
+        <p></p>
+      </div>
     </footer>
   );
 }

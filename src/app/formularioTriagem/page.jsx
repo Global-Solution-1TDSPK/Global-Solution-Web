@@ -21,6 +21,7 @@ export default function Triagem() {
                   id="motivo-visita-hospital"
                   cols="30"
                   rows="10"
+                  required
                 ></textarea>
                 <label htmlFor="medicamento-regurlamente">
                   Você está atualmente tomando algum medicamento regularmente?
@@ -31,6 +32,7 @@ export default function Triagem() {
                   id="medicamento-regurlamente"
                   cols="30"
                   rows="10"
+                  required
                 ></textarea>
                 <label htmlFor="condição médica pré-existente">
                   Você tem alguma condição médica pré-existente ou histórico
@@ -42,6 +44,7 @@ export default function Triagem() {
                   id="condição-médica-pré-existente"
                   cols="30"
                   rows="10"
+                  required
                 ></textarea>
                 <label htmlFor="sintoma-específico">
                   Você experimentou algum sintoma específico recentemente, como
@@ -56,6 +59,7 @@ export default function Triagem() {
                   id="sintoma-específico"
                   cols="30"
                   rows="10"
+                  required
                 ></textarea>
                 <label htmlFor="COVID-19">
                   Já teve contato próximo com alguém diagnosticado com doenças
@@ -66,6 +70,7 @@ export default function Triagem() {
                   id="COVID-19"
                   cols="30"
                   rows="10"
+                  required
                 ></textarea>
                 <label htmlFor="doenças-contagiosas">
                   Você esteve viajando recentemente para áreas com{" "}
@@ -76,6 +81,7 @@ export default function Triagem() {
                   id="doenças-contagiosas"
                   cols="30"
                   rows="10"
+                  required
                 ></textarea>
                 <div className="ajuste-botao-triagem">
                   <button type="submit">Enviar</button>
