@@ -9,13 +9,25 @@ export default function Login() {
       <div className="cor-fundo-formulario">
         <div className="posicao-central">
           <h2>Login</h2>
-          <div className="formulario-login">
-            <input type="text" placeholder="Digite seu usuário..." />
-            <input type="password" placeholder="Digite sua senha..." />
-          </div>
-          <Link href="/conteudoHome">
-            <button>Entrar</button>
-          </Link>
+          <form action="">
+            <div className="formulario-login">
+              <input
+                type="email"
+                placeholder="Digite seu e-mail..."
+                id="email"
+                name="email"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Digite sua senha..."
+                id="senha"
+                name="senha"
+                required
+              />
+            </div>
+            <button type="submit">Entrar</button>
+          </form>
           <div className="linha"></div>
           <p>
             Ainda não tem uma conta?
