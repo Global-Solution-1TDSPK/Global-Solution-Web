@@ -55,7 +55,7 @@ export default function FormularioDadosPessoais() {
                   <input
                     type="number"
                     placeholder="Digite seu cpf..."
-                    title="Digite um CPF no formato: XXX.XXX.XXX-XX"
+                    title="Digite apenas os números"
                     id="cpf"
                     name="cpf"
                     required
@@ -65,7 +65,7 @@ export default function FormularioDadosPessoais() {
                   <input
                     type="number"
                     placeholder="Digite seu número de telefone..."
-                    title="Digite o telefone no formato: (XX) XXXXX-XXXX"
+                    title="Digite apenas os números"
                     id="telefone"
                     name="telefone"
                     required
