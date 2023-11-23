@@ -1,7 +1,7 @@
 import Link from "next/link";
-import "../Components/Nav.scss";
+import "./Nav.scss";
 import Image from "next/image";
-import roseta from "../../public/roseta.svg";
+import roseta from "../../../public/roseta.svg";
 
 export default function Nav() {
   return (
@@ -13,7 +13,7 @@ export default function Nav() {
           </Link>
         </div>
         <Link href="/login">
-          <p>Login</p>
+          <p>Página Login</p>
         </Link>
       </div>
     </nav>

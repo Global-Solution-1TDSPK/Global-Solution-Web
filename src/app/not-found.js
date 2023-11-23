@@ -1,6 +1,6 @@
 "use client";
-import Nav from "@/Components/Nav";
-import Footer from "@/Components/Footer";
+import Nav from "@/components/nav/Nav";
+import Footer from "@/components/footer/Footer";
 import Image from "next/image";
 import erro from "../../public/not-found.png";
 import "../styles/not-found.scss";

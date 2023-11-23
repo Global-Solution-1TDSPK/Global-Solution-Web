@@ -1,10 +1,10 @@
-import "../Components/Footer.scss";
+import "./Footer.scss";
 import Image from "next/image";
-import insta from "../../public/instagram.png";
-import twitter from "../../public/twitter.png";
-import face from "../../public/facebook.png";
-import linkedin from "../../public/linkedin.png";
-import github from "../../public/github.png";
+import insta from "../../../public/instagram.png";
+import twitter from "../../../public/twitter.png";
+import face from "../../../public/facebook.png";
+import linkedin from "../../../public/linkedin.png";
+import github from "../../../public/github.png";
 
 export default function Footer() {
   return (

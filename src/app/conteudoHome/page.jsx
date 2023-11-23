@@ -1,7 +1,8 @@
 import "./conteudoHome.scss";
-import Nav from "@/Components/Nav";
-import Footer from "@/Components/Footer";
+import Nav from "@/components/nav/Nav";
+import Footer from "@/components/footer/Footer";
 import Link from "next/link";
+import Formulario from "../../components/formulario/Formulario";
 
 export default function ConteudoHome() {
   return (
@@ -27,13 +28,10 @@ export default function ConteudoHome() {
         <h2>
           Formulários <span>concluidos</span>
         </h2>
-        <div className="ajustes-forms">
-          <div className="container-formularios"></div>
-          <div className="container-formularios"></div>
-          <div className="container-formularios"></div>
-          <div className="container-formularios"></div>
-          <div className="container-formularios"></div>
-        </div>
+        <Formulario />
+        <Formulario />
+        <Formulario />
+        <Formulario />
       </main>
       <Footer />
     </>

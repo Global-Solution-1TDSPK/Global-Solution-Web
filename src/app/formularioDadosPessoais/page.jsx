@@ -1,6 +1,6 @@
 import "./dadosPessoais.scss";
-import Nav from "@/Components/Nav";
-import Footer from "@/Components/Footer";
+import Nav from "@/components/nav/Nav";
+import Footer from "@/components/footer/Footer";
 import Link from "next/link";
 
 export default function FormularioDadosPessoais() {

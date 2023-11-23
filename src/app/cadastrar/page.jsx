@@ -9,15 +9,39 @@ export default function Cadastrar() {
       <div className="cor-fundo-formulario">
         <div className="posicao-central">
           <h2>Cadastrar</h2>
-          <div className="formulario-cadastro">
-            <input type="text" placeholder="Digite seu nome..." />
-            <input type="text" placeholder="Digite seu sobrenome..." />
-            <input type="email" placeholder="Digite seu e-mail..." />
-            <input type="password" placeholder="Digite uma senha..." />
-          </div>
-          <Link href="/login">
+          <form action="cadastro.js" method="POST">
+            <div className="formulario-cadastro">
+              <input
+                type="text"
+                placeholder="Digite seu nome..."
+                id="nome"
+                name="nome"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Digite seu sobrenome..."
+                id="sobrenome"
+                name="sobrenome"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Digite seu e-mail..."
+                id="email"
+                name="email"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Digite uma senha..."
+                id="senha"
+                name="senha"
+                required
+              />
+            </div>
             <button>Cadastrar</button>
-          </Link>
+          </form>
           <div className="linha"></div>
           <p>
             Já tem uma conta? Faça
