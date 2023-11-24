@@ -1,15 +1,43 @@
+"use client";
+
+import { useState } from "react";
 import fotoCadastro from "../../../public/fotoCadastro.svg";
 import "../cadastrar/cadastrar.scss";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Cadastrar() {
+  
+
+  const [cadastro, setCadastro] = useState();
+
+  let metodo = "post";
+  
+
+  const handleChange = (e) => {
+    setCadastro({ ...cadastro, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("Dados do Cadastro Enviados:", cadastro);
+
+    fetch(`http://localhost:8080/Loja/rest/login`, {
+      method: metodo,
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify(cadastro),
+    })
+      .then(() => (window.location = "/login"))
+      .catch((error) => console.error(error));
+  };
+
   return (
     <main className="separador">
       <div className="cor-fundo-formulario">
         <div className="posicao-central">
           <h2>Cadastrar</h2>
-          <form action="cadastro.js" method="POST">
+          <form onSubmit={handleSubmit}>
             <div className="formulario-cadastro">
               <input
                 type="text"
@@ -17,6 +45,7 @@ export default function Cadastrar() {
                 id="nome"
                 name="nome"
                 required
+                onChange={handleChange}
               />
               <input
                 type="text"
@@ -24,6 +53,7 @@ export default function Cadastrar() {
                 id="sobrenome"
                 name="sobrenome"
                 required
+                onChange={handleChange}
               />
               <input
                 type="email"
@@ -31,6 +61,7 @@ export default function Cadastrar() {
                 id="email"
                 name="email"
                 required
+                onChange={handleChange}
               />
               <input
                 type="password"
@@ -38,9 +69,10 @@ export default function Cadastrar() {
                 id="senha"
                 name="senha"
                 required
+                onChange={handleChange}
               />
             </div>
-            <button>Cadastrar</button>
+            <button type="submit">Cadastrar</button>
           </form>
           <div className="linha"></div>
           <p>
