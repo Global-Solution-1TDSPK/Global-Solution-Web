@@ -35,6 +35,11 @@ export default function Login() {
               <span className="cor-cadastro"> cadastre-se :)</span>
             </Link>
           </p>
+          <div className="linha-p-adm">
+          <Link href="/verificarLoginAdm">
+          <p>Acesso Administrativo</p>
+          </Link>
+          </div>
         </div>
       </div>
       <div className="fundo-login">

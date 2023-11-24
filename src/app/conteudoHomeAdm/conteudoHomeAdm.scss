@@ -1,0 +1,12 @@
+
+.titulo-centro{
+    text-align: center;
+    
+    & h1{
+        font-size: 55px;
+    }
+
+    & span{
+        color: #ec6e0c;
+    }
+}

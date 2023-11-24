@@ -93,6 +93,13 @@
   min-width: 400px;
 }
 
+.linha-p-adm{
+
+  & p{
+    text-decoration: underline;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .fundo-login {
     display: none;
