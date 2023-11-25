@@ -1,16 +1,37 @@
+"use client"
+
 import "./login.scss";
 import fotoLogin from "../../../public/fotoLogin.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Login() {
+
+  const [loginusu, setLoginusu] = useState();  
+
+  const handleChange = (e) => {
+    setLoginusu({ ...loginusu, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("Dados do Cadastro Enviados:", loginusu);
+    fetch(`http://localhost:8080/Loja/rest/login/verificarLogin?email` + loginusu.email + '&senha' + loginusu.senha, {
+      method: "get",
+    })
+      .then(() => (window.location = "/conteudoHome"))
+      .catch((error) => console.error(error));
+  };
+
 
   return (
     <main className="separador">
       <div className="cor-fundo-formulario">
         <div className="posicao-central">
           <h2>Login</h2>
-          <form action="">
+          <form onSubmit={handleSubmit}>
             <div className="formulario-login">
               <input
                 type="email"
@@ -18,6 +39,7 @@ export default function Login() {
                 id="email"
                 name="email"
                 required
+                onChange={handleChange}
               />
               <input
                 type="password"
@@ -25,6 +47,7 @@ export default function Login() {
                 id="senha"
                 name="senha"
                 required
+                onChange={handleChange}
               />
             </div>
             <button type="submit">Entrar</button>
