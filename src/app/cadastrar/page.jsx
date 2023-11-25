@@ -8,11 +8,7 @@ import Link from "next/link";
 
 export default function Cadastrar() {
   
-
-  const [cadastro, setCadastro] = useState();
-
-  let metodo = "post";
-  
+  const [cadastro, setCadastro] = useState();  
 
   const handleChange = (e) => {
     setCadastro({ ...cadastro, [e.target.name]: e.target.value });
@@ -22,10 +18,11 @@ export default function Cadastrar() {
     e.preventDefault();
 
     console.log("Dados do Cadastro Enviados:", cadastro);
+    console.log("Dados Enviados:", JSON.stringify(cadastro))
 
     fetch(`http://localhost:8080/Loja/rest/login`, {
-      method: metodo,
-      headers: {"Content-Type":"application/json"},
+      method: "post",
+      headers:{"Content-Type":"application/json"},
       body: JSON.stringify(cadastro),
     })
       .then(() => (window.location = "/login"))
